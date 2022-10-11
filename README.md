@@ -16,9 +16,9 @@ This app is based on the [Repository Pattern] Codelab.
 Environment
 
 - Kotlin 1.7.10
-- Android Studio Chipmunk 2021.2.1
-- Gradle Plugin 7.2.2
+- Android Studio Dolphin 2021.3.1
+- Gradle Plugin 7.3.0
 
 ----
 
-updated: 2022-08-19
+updated: 2022-10-11
