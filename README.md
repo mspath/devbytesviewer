@@ -11,14 +11,19 @@ This app is based on the [Repository Pattern] Codelab.
 [Pathway 2]: https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-2
 [Repository Pattern]: https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern
 
-----
+---
 
 Environment
 
-- Kotlin 1.7.10
+- Kotlin 1.7.20
 - Android Studio Dolphin 2021.3.1
-- Gradle Plugin 7.3.0
+- Gradle Plugin 7.3.1
 
-----
+---
 
-updated: 2022-10-11
+```
+language: kotlin
+repo: devbytes
+status: private archived
+updated: 2022-12-03
+```
