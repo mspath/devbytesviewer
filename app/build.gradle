@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs"
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 33
@@ -36,28 +35,19 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     // support libraries
-    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'com.google.android.material:material:1.6.1'
-
-    // Android KTX
-    // implementation 'androidx.core:core-ktx:1.8.0'
-
-    // constraint layout
+    implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // navigation
-    def nav_version = "1.0.0"
-    implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
 
     // coroutines for getting off the UI thread
-    def coroutines = "1.6.4"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
 
     // retrofit for networking
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -65,19 +55,16 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
     // moshi for parsing the JSON format
-    def moshi_version = "1.13.0"
-    implementation "com.squareup.moshi:moshi:$moshi_version"
-    implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    implementation "com.squareup.moshi:moshi-kotlin:1.14.0"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.14.0"
 
-    // joda time library for dealing with time
+    // time library for dealing with time
     implementation 'joda-time:joda-time:2.10'
 
     // arch components
     // ViewModel and LiveData
-    def lifecycle_version = "2.5.1"
-//    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
 
     // logging
     implementation 'com.jakewharton.timber:timber:4.7.1'
@@ -87,8 +74,7 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.7.1'
 
     // Room dependency
-    def room_version = "2.4.3"
-    implementation "androidx.room:room-runtime:$room_version"
-    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-runtime:2.5.1"
+    kapt "androidx.room:room-compiler:2.5.1"
 
 }

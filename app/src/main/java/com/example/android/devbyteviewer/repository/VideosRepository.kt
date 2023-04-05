@@ -17,7 +17,7 @@
 package com.example.android.devbyteviewer.repository
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
+import androidx.lifecycle.map
 import com.example.android.devbyteviewer.database.VideosDatabase
 import com.example.android.devbyteviewer.database.asDomainModel
 import com.example.android.devbyteviewer.domain.DevByteVideo
@@ -31,7 +31,7 @@ import kotlinx.coroutines.withContext
  */
 class VideosRepository(private val database: VideosDatabase) {
 
-    val videos: LiveData<List<DevByteVideo>> = Transformations.map(database.videoDao.getVideos()) {
+    val videos: LiveData<List<DevByteVideo>> = database.videoDao.getVideos().map {
         it.asDomainModel()
     }
 
