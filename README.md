@@ -15,9 +15,9 @@ This app is based on the [Repository Pattern] Codelab.
 
 Environment
 
-- Kotlin 1.8.0
-- Android Studio Electric Eel 2022.1.1
-- Gradle Plugin 7.4.2
+- Kotlin 1.8.10
+- Android Studio Flamingo 2022.2.1
+- Gradle Plugin 8.0.0
 
 ---
 
@@ -25,5 +25,5 @@ Environment
 language: kotlin
 repo: devbytes
 status: private archived
-updated: 2023-04-05
+updated: 2023-04-18
 ```
