@@ -17,7 +17,7 @@ Environment
 
 - Kotlin 1.8.10
 - Android Studio Flamingo 2022.2.1
-- Gradle Plugin 8.0.0
+- Gradle Plugin 8.0.1
 
 ---
 
@@ -25,5 +25,5 @@ Environment
 language: kotlin
 repo: devbytes
 status: private archived
-updated: 2023-04-18
+updated: 2023-06-20
 ```
